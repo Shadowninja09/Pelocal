@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}To-Do List{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .task-card {
+            transition: transform 0.2s;
+        }
+        .task-card:hover {
+            transform: translateY(-2px);
+        }
+        .status-badge {
+            font-size: 0.8em;
+        }
+        .due-date {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        .task-actions {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .task-card:hover .task-actions {
+            opacity: 1;
+        }
+        .loading {
+            display: none;
+        }
+        .error-message {
+            display: none;
+        }
+        .success-message {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'task_list' %}">
+                <i class="fas fa-tasks me-2"></i>To-Do List
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="{% url 'task_list' %}">
+                    <i class="fas fa-list me-1"></i>All Tasks
+                </a>
+                <a class="nav-link" href="{% url 'add_task' %}">
+                    <i class="fas fa-plus me-1"></i>Add Task
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Alert Messages -->
+        <div id="alert-container">
+            <div class="alert alert-success success-message" role="alert">
+                <i class="fas fa-check-circle me-2"></i>
+                <span class="alert-message"></span>
+            </div>
+            <div class="alert alert-danger error-message" role="alert">
+                <i class="fas fa-exclamation-circle me-2"></i>
+                <span class="alert-message"></span>
+            </div>
+        </div>
+
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Utility functions for API calls
+        function showAlert(message, type = 'success') {
+            const alertContainer = document.getElementById('alert-container');
+            const alertClass = type === 'success' ? 'success-message' : 'error-message';
+            const alert = alertContainer.querySelector('.' + alertClass);
+            const messageSpan = alert.querySelector('.alert-message');
+            
+            messageSpan.textContent = message;
+            alert.style.display = 'block';
+            
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+
+        function showLoading(element) {
+            element.querySelector('.loading').style.display = 'inline-block';
+            element.disabled = true;
+        }
+
+        function hideLoading(element) {
+            element.querySelector('.loading').style.display = 'none';
+            element.disabled = false;
+        }
+
+        function formatDate(dateString) {
+            if (!dateString) return 'No due date';
+            const date = new Date(dateString);
+            return date.toLocaleDateString();
+        }
+
+        function getStatusBadgeClass(status) {
+            switch(status) {
+                case 'completed': return 'bg-success';
+                case 'in_progress': return 'bg-warning';
+                case 'pending': return 'bg-secondary';
+                default: return 'bg-secondary';
+            }
+        }
+
+        function getStatusText(status) {
+            switch(status) {
+                case 'completed': return 'Completed';
+                case 'in_progress': return 'In Progress';
+                case 'pending': return 'Pending';
+                default: return 'Unknown';
+            }
+        }
+    </script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

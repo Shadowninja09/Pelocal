@@ -1,0 +1,459 @@
+INFO 2025-09-26 16:00:59,609 database 35541 8496695296 Database initialized successfully
+INFO 2025-09-26 22:48:53,545 autoreload 17084 6308 Watching for file changes with StatReloader
+INFO 2025-09-26 22:48:53,590 database 17084 6308 Database initialized successfully
+INFO 2025-09-26 22:49:25,269 database 16560 7160 Database initialized successfully
+INFO 2025-09-26 22:49:47,360 database 20276 15336 Database initialized successfully
+INFO 2025-09-26 22:50:00,454 autoreload 6348 15996 Watching for file changes with StatReloader
+INFO 2025-09-26 22:50:00,469 database 6348 15996 Database initialized successfully
+INFO 2025-09-26 22:50:24,039 middleware 6348 12068 Request: GET / from 127.0.0.1
+INFO 2025-09-26 22:50:24,053 middleware 6348 12068 Response: 200 for GET /
+INFO 2025-09-26 22:50:24,053 basehttp 6348 12068 "GET / HTTP/1.1" 200 15216
+INFO 2025-09-26 22:50:24,492 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:24,494 database 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:24,494 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:24,497 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:24,499 basehttp 6348 12068 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:24,933 middleware 6348 12068 Request: GET /favicon.ico from 127.0.0.1
+INFO 2025-09-26 22:50:25,022 middleware 6348 12068 Response: 404 for GET /favicon.ico
+WARNING 2025-09-26 22:50:25,023 log 6348 12068 Not Found: /favicon.ico
+WARNING 2025-09-26 22:50:25,024 basehttp 6348 12068 "GET /favicon.ico HTTP/1.1" 404 3412
+INFO 2025-09-26 22:50:27,909 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:27,911 database 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:27,911 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:27,914 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:27,916 basehttp 6348 12068 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:29,218 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:29,220 database 6348 12068 Retrieved 0 tasks with status: pending
+INFO 2025-09-26 22:50:29,221 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:29,224 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:29,225 basehttp 6348 12068 "GET /api/tasks/list/?status=pending HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:30,505 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:30,507 database 6348 12068 Retrieved 0 tasks with status: in_progress
+INFO 2025-09-26 22:50:30,508 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:30,509 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:30,511 basehttp 6348 12068 "GET /api/tasks/list/?status=in_progress HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:31,704 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:31,706 database 6348 12068 Retrieved 0 tasks with status: completed
+INFO 2025-09-26 22:50:31,706 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:31,709 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:31,710 basehttp 6348 12068 "GET /api/tasks/list/?status=completed HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:33,885 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:33,887 database 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:33,888 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:33,891 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:33,892 basehttp 6348 12068 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:34,971 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:34,974 database 6348 12068 Retrieved 0 tasks with status: pending
+INFO 2025-09-26 22:50:34,974 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:34,976 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:34,977 basehttp 6348 12068 "GET /api/tasks/list/?status=pending HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:36,115 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:36,117 database 6348 12068 Retrieved 0 tasks with status: in_progress
+INFO 2025-09-26 22:50:36,119 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:36,120 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:36,121 basehttp 6348 12068 "GET /api/tasks/list/?status=in_progress HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:37,178 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:37,179 database 6348 12068 Retrieved 0 tasks with status: completed
+INFO 2025-09-26 22:50:37,180 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:37,182 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:37,184 basehttp 6348 12068 "GET /api/tasks/list/?status=completed HTTP/1.1" 200 78
+INFO 2025-09-26 22:50:38,955 middleware 6348 12068 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-26 22:50:38,957 database 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:38,957 views 6348 12068 Retrieved 0 tasks
+INFO 2025-09-26 22:50:38,959 middleware 6348 12068 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-26 22:50:38,960 basehttp 6348 12068 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-27 12:37:04,809 autoreload 12584 10772 Watching for file changes with StatReloader
+INFO 2025-09-27 12:37:04,837 database 12584 10772 Database initialized successfully
+INFO 2025-09-27 12:37:21,232 middleware 12584 16592 Request: GET / from 127.0.0.1
+INFO 2025-09-27 12:37:21,394 middleware 12584 16592 Response: 200 for GET /
+INFO 2025-09-27 12:37:21,395 basehttp 12584 16592 "GET / HTTP/1.1" 200 15216
+INFO 2025-09-27 12:37:21,440 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:37:21,442 database 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:21,444 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:21,444 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:37:21,445 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-27 12:37:21,597 middleware 12584 16592 Request: GET /favicon.ico from 127.0.0.1
+INFO 2025-09-27 12:37:21,774 middleware 12584 16592 Response: 404 for GET /favicon.ico
+WARNING 2025-09-27 12:37:21,776 log 12584 16592 Not Found: /favicon.ico
+WARNING 2025-09-27 12:37:21,777 basehttp 12584 16592 "GET /favicon.ico HTTP/1.1" 404 3412
+INFO 2025-09-27 12:37:24,478 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:37:24,480 database 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:24,481 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:24,482 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:37:24,483 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-27 12:37:26,270 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:37:26,272 database 12584 16592 Retrieved 0 tasks with status: pending
+INFO 2025-09-27 12:37:26,272 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:26,275 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:37:26,277 basehttp 12584 16592 "GET /api/tasks/list/?status=pending HTTP/1.1" 200 78
+INFO 2025-09-27 12:37:27,306 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:37:27,307 database 12584 16592 Retrieved 0 tasks with status: in_progress
+INFO 2025-09-27 12:37:27,308 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:27,310 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:37:27,312 basehttp 12584 16592 "GET /api/tasks/list/?status=in_progress HTTP/1.1" 200 78
+INFO 2025-09-27 12:37:28,301 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:37:28,303 database 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:28,304 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:37:28,306 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:37:28,307 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-27 12:37:29,857 middleware 12584 16592 Request: GET /add/ from 127.0.0.1
+INFO 2025-09-27 12:37:29,922 middleware 12584 16592 Response: 200 for GET /add/
+INFO 2025-09-27 12:37:29,923 basehttp 12584 16592 "GET /add/ HTTP/1.1" 200 11271
+INFO 2025-09-27 12:38:06,036 middleware 12584 16592 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 12:38:06,051 database 12584 16592 Task created successfully with ID: 1
+INFO 2025-09-27 12:38:06,051 views 12584 16592 Task created successfully: 1
+INFO 2025-09-27 12:38:06,053 middleware 12584 16592 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 12:38:06,055 basehttp 12584 16592 "POST /api/tasks/ HTTP/1.1" 201 258
+INFO 2025-09-27 12:38:07,600 middleware 12584 16592 Request: GET / from 127.0.0.1
+INFO 2025-09-27 12:38:07,602 middleware 12584 16592 Response: 200 for GET /
+INFO 2025-09-27 12:38:07,604 basehttp 12584 16592 "GET / HTTP/1.1" 200 15216
+INFO 2025-09-27 12:38:07,643 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:07,667 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:07,668 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:07,669 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:07,670 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 265
+INFO 2025-09-27 12:38:11,841 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:11,843 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:11,843 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:11,845 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:11,846 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 265
+INFO 2025-09-27 12:38:13,737 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:13,739 database 12584 16592 Retrieved 1 tasks with status: pending
+INFO 2025-09-27 12:38:13,739 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:13,741 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:13,742 basehttp 12584 16592 "GET /api/tasks/list/?status=pending HTTP/1.1" 200 265
+INFO 2025-09-27 12:38:15,366 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:15,368 database 12584 16592 Retrieved 0 tasks with status: in_progress
+INFO 2025-09-27 12:38:15,369 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:38:15,371 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:15,372 basehttp 12584 16592 "GET /api/tasks/list/?status=in_progress HTTP/1.1" 200 78
+INFO 2025-09-27 12:38:16,817 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:16,819 database 12584 16592 Retrieved 0 tasks with status: completed
+INFO 2025-09-27 12:38:16,820 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:38:16,821 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:16,823 basehttp 12584 16592 "GET /api/tasks/list/?status=completed HTTP/1.1" 200 78
+INFO 2025-09-27 12:38:18,278 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:18,280 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:18,280 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:18,284 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:18,286 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 265
+INFO 2025-09-27 12:38:41,723 middleware 12584 16592 Request: PUT /api/tasks/1/update/ from 127.0.0.1
+INFO 2025-09-27 12:38:41,735 database 12584 16592 Task 1 updated successfully
+INFO 2025-09-27 12:38:41,736 views 12584 16592 Task 1 updated successfully
+INFO 2025-09-27 12:38:41,737 middleware 12584 16592 Response: 200 for PUT /api/tasks/1/update/
+INFO 2025-09-27 12:38:41,740 basehttp 12584 16592 "PUT /api/tasks/1/update/ HTTP/1.1" 200 262
+INFO 2025-09-27 12:38:41,745 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:41,748 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:41,748 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:41,749 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:41,751 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 269
+INFO 2025-09-27 12:38:45,367 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:45,370 database 12584 16592 Retrieved 1 tasks with status: in_progress
+INFO 2025-09-27 12:38:45,371 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:45,373 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:45,374 basehttp 12584 16592 "GET /api/tasks/list/?status=in_progress HTTP/1.1" 200 269
+INFO 2025-09-27 12:38:48,233 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:48,235 database 12584 16592 Retrieved 0 tasks with status: pending
+INFO 2025-09-27 12:38:48,237 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:38:48,237 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:48,238 basehttp 12584 16592 "GET /api/tasks/list/?status=pending HTTP/1.1" 200 78
+INFO 2025-09-27 12:38:49,570 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:49,572 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:49,572 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:49,573 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:49,576 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 269
+INFO 2025-09-27 12:38:50,620 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:50,623 database 12584 16592 Retrieved 1 tasks with status: in_progress
+INFO 2025-09-27 12:38:50,624 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:50,626 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:50,627 basehttp 12584 16592 "GET /api/tasks/list/?status=in_progress HTTP/1.1" 200 269
+INFO 2025-09-27 12:38:52,588 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:52,590 database 12584 16592 Retrieved 0 tasks with status: completed
+INFO 2025-09-27 12:38:52,591 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:38:52,593 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:52,594 basehttp 12584 16592 "GET /api/tasks/list/?status=completed HTTP/1.1" 200 78
+INFO 2025-09-27 12:38:54,127 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:38:54,129 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:54,129 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:38:54,132 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:38:54,133 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 269
+INFO 2025-09-27 12:39:04,028 middleware 12584 16592 Request: PUT /api/tasks/1/update/ from 127.0.0.1
+INFO 2025-09-27 12:39:04,038 database 12584 16592 Task 1 updated successfully
+INFO 2025-09-27 12:39:04,040 views 12584 16592 Task 1 updated successfully
+INFO 2025-09-27 12:39:04,041 middleware 12584 16592 Response: 200 for PUT /api/tasks/1/update/
+INFO 2025-09-27 12:39:04,044 basehttp 12584 16592 "PUT /api/tasks/1/update/ HTTP/1.1" 200 260
+INFO 2025-09-27 12:39:04,048 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:39:04,054 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:39:04,055 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:39:04,056 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:39:04,058 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 267
+INFO 2025-09-27 12:39:08,128 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:39:08,130 database 12584 16592 Retrieved 0 tasks with status: pending
+INFO 2025-09-27 12:39:08,131 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:39:08,133 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:39:08,134 basehttp 12584 16592 "GET /api/tasks/list/?status=pending HTTP/1.1" 200 78
+INFO 2025-09-27 12:39:10,400 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:39:10,402 database 12584 16592 Retrieved 0 tasks with status: in_progress
+INFO 2025-09-27 12:39:10,402 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:39:10,405 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:39:10,406 basehttp 12584 16592 "GET /api/tasks/list/?status=in_progress HTTP/1.1" 200 78
+INFO 2025-09-27 12:39:11,399 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:39:11,400 database 12584 16592 Retrieved 1 tasks with status: completed
+INFO 2025-09-27 12:39:11,401 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:39:11,404 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:39:11,406 basehttp 12584 16592 "GET /api/tasks/list/?status=completed HTTP/1.1" 200 267
+INFO 2025-09-27 12:42:16,227 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:42:16,228 database 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:42:16,229 views 12584 16592 Retrieved 1 tasks
+INFO 2025-09-27 12:42:16,229 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:42:16,230 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 267
+INFO 2025-09-27 12:42:25,449 middleware 12584 16592 Request: DELETE /api/tasks/1/delete/ from 127.0.0.1
+INFO 2025-09-27 12:42:25,456 database 12584 16592 Task 1 deleted successfully
+INFO 2025-09-27 12:42:25,456 views 12584 16592 Task 1 deleted successfully
+INFO 2025-09-27 12:42:25,457 middleware 12584 16592 Response: 200 for DELETE /api/tasks/1/delete/
+INFO 2025-09-27 12:42:25,458 basehttp 12584 16592 "DELETE /api/tasks/1/delete/ HTTP/1.1" 200 75
+INFO 2025-09-27 12:42:25,466 middleware 12584 16592 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 12:42:25,470 database 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:42:25,471 views 12584 16592 Retrieved 0 tasks
+INFO 2025-09-27 12:42:25,471 middleware 12584 16592 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 12:42:25,472 basehttp 12584 16592 "GET /api/tasks/list/ HTTP/1.1" 200 78
+INFO 2025-09-27 13:05:18,745 autoreload 5944 18568 Watching for file changes with StatReloader
+INFO 2025-09-27 13:05:18,755 database 5944 18568 Database initialized successfully
+INFO 2025-09-27 13:22:52,403 database 17744 22024 Database initialized successfully
+INFO 2025-09-27 13:22:52,410 database 17744 22024 Task created successfully with ID: 1
+INFO 2025-09-27 13:22:52,577 database 17744 22024 Database initialized successfully
+INFO 2025-09-27 13:22:52,583 database 17744 22024 Task created successfully with ID: 2
+INFO 2025-09-27 13:22:52,590 database 17744 22024 Task 2 deleted successfully
+WARNING 2025-09-27 13:22:52,592 database 17744 22024 Task 2 not found
+WARNING 2025-09-27 13:22:52,593 database 17744 22024 Task 999 not found for deletion
+INFO 2025-09-27 13:22:52,615 database 17744 22024 Database initialized successfully
+INFO 2025-09-27 13:22:52,620 database 17744 22024 Task created successfully with ID: 3
+INFO 2025-09-27 13:22:52,625 database 17744 22024 Task created successfully with ID: 4
+INFO 2025-09-27 13:22:52,628 database 17744 22024 Retrieved 3 tasks
+INFO 2025-09-27 13:22:52,662 database 17744 22024 Database initialized successfully
+INFO 2025-09-27 13:22:52,667 database 17744 22024 Task created successfully with ID: 5
+INFO 2025-09-27 13:22:52,670 database 17744 22024 Task 5 retrieved successfully
+WARNING 2025-09-27 13:22:52,671 database 17744 22024 Task 999 not found
+INFO 2025-09-27 13:22:52,691 database 17744 22024 Database initialized successfully
+INFO 2025-09-27 13:22:52,695 database 17744 22024 Task created successfully with ID: 6
+INFO 2025-09-27 13:22:52,701 database 17744 22024 Task created successfully with ID: 7
+INFO 2025-09-27 13:22:52,707 database 17744 22024 Task created successfully with ID: 8
+INFO 2025-09-27 13:22:52,709 database 17744 22024 Task 6 updated successfully
+INFO 2025-09-27 13:22:52,713 database 17744 22024 Task 7 updated successfully
+INFO 2025-09-27 13:22:52,718 database 17744 22024 Task 8 updated successfully
+INFO 2025-09-27 13:22:52,720 database 17744 22024 Retrieved 5 tasks with status: pending
+INFO 2025-09-27 13:22:52,721 database 17744 22024 Retrieved 1 tasks with status: in_progress
+INFO 2025-09-27 13:22:52,722 database 17744 22024 Retrieved 1 tasks with status: completed
+INFO 2025-09-27 13:22:52,746 database 17744 22024 Database initialized successfully
+INFO 2025-09-27 13:22:52,750 database 17744 22024 Task created successfully with ID: 9
+INFO 2025-09-27 13:22:52,756 database 17744 22024 Task 9 updated successfully
+INFO 2025-09-27 13:22:52,790 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,799 database 17744 22024 Database initialized successfully
+INFO 2025-09-27 13:22:52,810 database 17744 22024 Task created successfully with ID: 10
+INFO 2025-09-27 13:22:52,810 views 17744 22024 Task created successfully: 10
+INFO 2025-09-27 13:22:52,811 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,814 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,815 middleware 17744 22024 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:22:52,815 log 17744 22024 Bad Request: /api/tasks/
+INFO 2025-09-27 13:22:52,816 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,816 middleware 17744 22024 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:22:52,816 log 17744 22024 Bad Request: /api/tasks/
+INFO 2025-09-27 13:22:52,817 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,817 middleware 17744 22024 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:22:52,818 log 17744 22024 Bad Request: /api/tasks/
+INFO 2025-09-27 13:22:52,818 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,818 middleware 17744 22024 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:22:52,819 log 17744 22024 Bad Request: /api/tasks/
+INFO 2025-09-27 13:22:52,822 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,828 database 17744 22024 Task created successfully with ID: 11
+INFO 2025-09-27 13:22:52,828 views 17744 22024 Task created successfully: 11
+INFO 2025-09-27 13:22:52,828 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,830 middleware 17744 22024 Request: DELETE /api/tasks/11/delete/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,836 database 17744 22024 Task 11 deleted successfully
+INFO 2025-09-27 13:22:52,836 views 17744 22024 Task 11 deleted successfully
+INFO 2025-09-27 13:22:52,837 middleware 17744 22024 Response: 200 for DELETE /api/tasks/11/delete/
+INFO 2025-09-27 13:22:52,837 middleware 17744 22024 Request: GET /api/tasks/11/ from 127.0.0.1
+WARNING 2025-09-27 13:22:52,839 database 17744 22024 Task 11 not found
+INFO 2025-09-27 13:22:52,839 middleware 17744 22024 Response: 404 for GET /api/tasks/11/
+WARNING 2025-09-27 13:22:52,839 log 17744 22024 Not Found: /api/tasks/11/
+INFO 2025-09-27 13:22:52,843 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,848 database 17744 22024 Task created successfully with ID: 12
+INFO 2025-09-27 13:22:52,849 views 17744 22024 Task created successfully: 12
+INFO 2025-09-27 13:22:52,849 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,849 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,856 database 17744 22024 Task created successfully with ID: 13
+INFO 2025-09-27 13:22:52,856 views 17744 22024 Task created successfully: 13
+INFO 2025-09-27 13:22:52,856 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,857 middleware 17744 22024 Request: PUT /api/tasks/12/update/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,859 database 17744 22024 Task 12 updated successfully
+INFO 2025-09-27 13:22:52,859 views 17744 22024 Task 12 updated successfully
+INFO 2025-09-27 13:22:52,859 middleware 17744 22024 Response: 200 for PUT /api/tasks/12/update/
+INFO 2025-09-27 13:22:52,860 middleware 17744 22024 Request: PUT /api/tasks/13/update/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,864 database 17744 22024 Task 13 updated successfully
+INFO 2025-09-27 13:22:52,865 views 17744 22024 Task 13 updated successfully
+INFO 2025-09-27 13:22:52,865 middleware 17744 22024 Response: 200 for PUT /api/tasks/13/update/
+INFO 2025-09-27 13:22:52,865 middleware 17744 22024 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,867 database 17744 22024 Retrieved 7 tasks with status: pending
+INFO 2025-09-27 13:22:52,868 views 17744 22024 Retrieved 7 tasks
+INFO 2025-09-27 13:22:52,868 middleware 17744 22024 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 13:22:52,879 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,884 database 17744 22024 Task created successfully with ID: 14
+INFO 2025-09-27 13:22:52,884 views 17744 22024 Task created successfully: 14
+INFO 2025-09-27 13:22:52,885 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,885 middleware 17744 22024 Request: GET /api/tasks/14/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,887 database 17744 22024 Task 14 retrieved successfully
+INFO 2025-09-27 13:22:52,887 views 17744 22024 Task 14 retrieved successfully
+INFO 2025-09-27 13:22:52,887 middleware 17744 22024 Response: 200 for GET /api/tasks/14/
+INFO 2025-09-27 13:22:52,888 middleware 17744 22024 Request: GET /api/tasks/999/ from 127.0.0.1
+WARNING 2025-09-27 13:22:52,888 database 17744 22024 Task 999 not found
+INFO 2025-09-27 13:22:52,889 middleware 17744 22024 Response: 404 for GET /api/tasks/999/
+WARNING 2025-09-27 13:22:52,889 log 17744 22024 Not Found: /api/tasks/999/
+INFO 2025-09-27 13:22:52,892 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,897 database 17744 22024 Task created successfully with ID: 15
+INFO 2025-09-27 13:22:52,897 views 17744 22024 Task created successfully: 15
+INFO 2025-09-27 13:22:52,897 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,898 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,904 database 17744 22024 Task created successfully with ID: 16
+INFO 2025-09-27 13:22:52,904 views 17744 22024 Task created successfully: 16
+INFO 2025-09-27 13:22:52,904 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,905 middleware 17744 22024 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,907 database 17744 22024 Retrieved 14 tasks
+INFO 2025-09-27 13:22:52,907 views 17744 22024 Retrieved 14 tasks
+INFO 2025-09-27 13:22:52,907 middleware 17744 22024 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 13:22:52,919 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,919 middleware 17744 22024 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:22:52,919 log 17744 22024 Bad Request: /api/tasks/
+INFO 2025-09-27 13:22:52,925 middleware 17744 22024 Request: GET /api/tasks/invalid/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,952 middleware 17744 22024 Response: 404 for GET /api/tasks/invalid/
+WARNING 2025-09-27 13:22:52,953 log 17744 22024 Not Found: /api/tasks/invalid/
+INFO 2025-09-27 13:22:52,968 middleware 17744 22024 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,974 database 17744 22024 Task created successfully with ID: 17
+INFO 2025-09-27 13:22:52,975 views 17744 22024 Task created successfully: 17
+INFO 2025-09-27 13:22:52,975 middleware 17744 22024 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:22:52,976 middleware 17744 22024 Request: PUT /api/tasks/17/update/ from 127.0.0.1
+INFO 2025-09-27 13:22:52,982 database 17744 22024 Task 17 updated successfully
+INFO 2025-09-27 13:22:52,982 views 17744 22024 Task 17 updated successfully
+INFO 2025-09-27 13:22:52,982 middleware 17744 22024 Response: 200 for PUT /api/tasks/17/update/
+INFO 2025-09-27 13:22:52,987 middleware 17744 22024 Request: GET /add/ from 127.0.0.1
+INFO 2025-09-27 13:22:53,001 middleware 17744 22024 Response: 200 for GET /add/
+INFO 2025-09-27 13:22:53,005 middleware 17744 22024 Request: GET / from 127.0.0.1
+INFO 2025-09-27 13:22:53,006 middleware 17744 22024 Response: 200 for GET /
+INFO 2025-09-27 13:24:52,992 database 13032 9548 Database initialized successfully
+INFO 2025-09-27 13:24:53,000 database 13032 9548 Task created successfully with ID: 18
+INFO 2025-09-27 13:24:53,005 database 13032 9548 Database initialized successfully
+INFO 2025-09-27 13:24:53,009 database 13032 9548 Task created successfully with ID: 19
+INFO 2025-09-27 13:24:53,015 database 13032 9548 Task 19 deleted successfully
+WARNING 2025-09-27 13:24:53,017 database 13032 9548 Task 19 not found
+WARNING 2025-09-27 13:24:53,018 database 13032 9548 Task 999 not found for deletion
+INFO 2025-09-27 13:24:53,022 database 13032 9548 Database initialized successfully
+INFO 2025-09-27 13:24:53,026 database 13032 9548 Task created successfully with ID: 20
+INFO 2025-09-27 13:24:53,032 database 13032 9548 Task created successfully with ID: 21
+INFO 2025-09-27 13:24:53,034 database 13032 9548 Retrieved 18 tasks
+INFO 2025-09-27 13:24:53,192 database 13032 9548 Database initialized successfully
+INFO 2025-09-27 13:24:53,198 database 13032 9548 Task created successfully with ID: 22
+INFO 2025-09-27 13:24:53,200 database 13032 9548 Task 22 retrieved successfully
+WARNING 2025-09-27 13:24:53,201 database 13032 9548 Task 999 not found
+INFO 2025-09-27 13:24:53,204 database 13032 9548 Database initialized successfully
+INFO 2025-09-27 13:24:53,209 database 13032 9548 Task created successfully with ID: 23
+INFO 2025-09-27 13:24:53,215 database 13032 9548 Task created successfully with ID: 24
+INFO 2025-09-27 13:24:53,221 database 13032 9548 Task created successfully with ID: 25
+INFO 2025-09-27 13:24:53,223 database 13032 9548 Task 23 updated successfully
+INFO 2025-09-27 13:24:53,227 database 13032 9548 Task 24 updated successfully
+INFO 2025-09-27 13:24:53,233 database 13032 9548 Task 25 updated successfully
+INFO 2025-09-27 13:24:53,235 database 13032 9548 Retrieved 15 tasks with status: pending
+INFO 2025-09-27 13:24:53,235 database 13032 9548 Retrieved 2 tasks with status: in_progress
+INFO 2025-09-27 13:24:53,236 database 13032 9548 Retrieved 5 tasks with status: completed
+INFO 2025-09-27 13:24:53,250 database 13032 9548 Database initialized successfully
+INFO 2025-09-27 13:24:53,254 database 13032 9548 Task created successfully with ID: 26
+INFO 2025-09-27 13:24:53,260 database 13032 9548 Task 26 updated successfully
+INFO 2025-09-27 13:24:53,283 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,292 database 13032 9548 Database initialized successfully
+INFO 2025-09-27 13:24:53,299 database 13032 9548 Task created successfully with ID: 27
+INFO 2025-09-27 13:24:53,299 views 13032 9548 Task created successfully: 27
+INFO 2025-09-27 13:24:53,300 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,304 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,304 middleware 13032 9548 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:24:53,304 log 13032 9548 Bad Request: /api/tasks/
+INFO 2025-09-27 13:24:53,305 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,305 middleware 13032 9548 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:24:53,305 log 13032 9548 Bad Request: /api/tasks/
+INFO 2025-09-27 13:24:53,306 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,306 middleware 13032 9548 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:24:53,306 log 13032 9548 Bad Request: /api/tasks/
+INFO 2025-09-27 13:24:53,307 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,307 middleware 13032 9548 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:24:53,307 log 13032 9548 Bad Request: /api/tasks/
+INFO 2025-09-27 13:24:53,310 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,317 database 13032 9548 Task created successfully with ID: 28
+INFO 2025-09-27 13:24:53,317 views 13032 9548 Task created successfully: 28
+INFO 2025-09-27 13:24:53,317 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,318 middleware 13032 9548 Request: DELETE /api/tasks/28/delete/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,325 database 13032 9548 Task 28 deleted successfully
+INFO 2025-09-27 13:24:53,326 views 13032 9548 Task 28 deleted successfully
+INFO 2025-09-27 13:24:53,326 middleware 13032 9548 Response: 200 for DELETE /api/tasks/28/delete/
+INFO 2025-09-27 13:24:53,326 middleware 13032 9548 Request: GET /api/tasks/28/ from 127.0.0.1
+WARNING 2025-09-27 13:24:53,328 database 13032 9548 Task 28 not found
+INFO 2025-09-27 13:24:53,329 middleware 13032 9548 Response: 404 for GET /api/tasks/28/
+WARNING 2025-09-27 13:24:53,329 log 13032 9548 Not Found: /api/tasks/28/
+INFO 2025-09-27 13:24:53,332 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,337 database 13032 9548 Task created successfully with ID: 29
+INFO 2025-09-27 13:24:53,338 views 13032 9548 Task created successfully: 29
+INFO 2025-09-27 13:24:53,338 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,338 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,344 database 13032 9548 Task created successfully with ID: 30
+INFO 2025-09-27 13:24:53,344 views 13032 9548 Task created successfully: 30
+INFO 2025-09-27 13:24:53,345 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,345 middleware 13032 9548 Request: PUT /api/tasks/29/update/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,347 database 13032 9548 Task 29 updated successfully
+INFO 2025-09-27 13:24:53,347 views 13032 9548 Task 29 updated successfully
+INFO 2025-09-27 13:24:53,347 middleware 13032 9548 Response: 200 for PUT /api/tasks/29/update/
+INFO 2025-09-27 13:24:53,348 middleware 13032 9548 Request: PUT /api/tasks/30/update/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,353 database 13032 9548 Task 30 updated successfully
+INFO 2025-09-27 13:24:53,353 views 13032 9548 Task 30 updated successfully
+INFO 2025-09-27 13:24:53,353 middleware 13032 9548 Response: 200 for PUT /api/tasks/30/update/
+INFO 2025-09-27 13:24:53,354 middleware 13032 9548 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,355 database 13032 9548 Retrieved 17 tasks with status: pending
+INFO 2025-09-27 13:24:53,356 views 13032 9548 Retrieved 17 tasks
+INFO 2025-09-27 13:24:53,356 middleware 13032 9548 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 13:24:53,368 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,372 database 13032 9548 Task created successfully with ID: 31
+INFO 2025-09-27 13:24:53,372 views 13032 9548 Task created successfully: 31
+INFO 2025-09-27 13:24:53,373 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,373 middleware 13032 9548 Request: GET /api/tasks/31/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,375 database 13032 9548 Task 31 retrieved successfully
+INFO 2025-09-27 13:24:53,375 views 13032 9548 Task 31 retrieved successfully
+INFO 2025-09-27 13:24:53,376 middleware 13032 9548 Response: 200 for GET /api/tasks/31/
+INFO 2025-09-27 13:24:53,376 middleware 13032 9548 Request: GET /api/tasks/999/ from 127.0.0.1
+WARNING 2025-09-27 13:24:53,377 database 13032 9548 Task 999 not found
+INFO 2025-09-27 13:24:53,377 middleware 13032 9548 Response: 404 for GET /api/tasks/999/
+WARNING 2025-09-27 13:24:53,377 log 13032 9548 Not Found: /api/tasks/999/
+INFO 2025-09-27 13:24:53,381 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,386 database 13032 9548 Task created successfully with ID: 32
+INFO 2025-09-27 13:24:53,386 views 13032 9548 Task created successfully: 32
+INFO 2025-09-27 13:24:53,386 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,387 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,393 database 13032 9548 Task created successfully with ID: 33
+INFO 2025-09-27 13:24:53,393 views 13032 9548 Task created successfully: 33
+INFO 2025-09-27 13:24:53,393 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,393 middleware 13032 9548 Request: GET /api/tasks/list/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,395 database 13032 9548 Retrieved 29 tasks
+INFO 2025-09-27 13:24:53,395 views 13032 9548 Retrieved 29 tasks
+INFO 2025-09-27 13:24:53,396 middleware 13032 9548 Response: 200 for GET /api/tasks/list/
+INFO 2025-09-27 13:24:53,407 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,408 middleware 13032 9548 Response: 400 for POST /api/tasks/
+WARNING 2025-09-27 13:24:53,408 log 13032 9548 Bad Request: /api/tasks/
+INFO 2025-09-27 13:24:53,411 middleware 13032 9548 Request: GET /api/tasks/invalid/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,431 middleware 13032 9548 Response: 404 for GET /api/tasks/invalid/
+WARNING 2025-09-27 13:24:53,431 log 13032 9548 Not Found: /api/tasks/invalid/
+INFO 2025-09-27 13:24:53,444 middleware 13032 9548 Request: POST /api/tasks/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,451 database 13032 9548 Task created successfully with ID: 34
+INFO 2025-09-27 13:24:53,451 views 13032 9548 Task created successfully: 34
+INFO 2025-09-27 13:24:53,451 middleware 13032 9548 Response: 201 for POST /api/tasks/
+INFO 2025-09-27 13:24:53,452 middleware 13032 9548 Request: PUT /api/tasks/34/update/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,457 database 13032 9548 Task 34 updated successfully
+INFO 2025-09-27 13:24:53,457 views 13032 9548 Task 34 updated successfully
+INFO 2025-09-27 13:24:53,458 middleware 13032 9548 Response: 200 for PUT /api/tasks/34/update/
+INFO 2025-09-27 13:24:53,462 middleware 13032 9548 Request: GET /add/ from 127.0.0.1
+INFO 2025-09-27 13:24:53,472 middleware 13032 9548 Response: 200 for GET /add/
+INFO 2025-09-27 13:24:53,475 middleware 13032 9548 Request: GET / from 127.0.0.1
+INFO 2025-09-27 13:24:53,476 middleware 13032 9548 Response: 200 for GET /

@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Task - To-Do List{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0">
+                    <i class="fas fa-plus me-2"></i>Add New Task
+                </h4>
+            </div>
+            <div class="card-body">
+                <form id="addTaskForm">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="title" required maxlength="200" 
+                               placeholder="Enter task title">
+                        <div class="form-text">Maximum 200 characters</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="description" rows="4" 
+                                  placeholder="Enter task description (optional)"></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="dueDate" class="form-label">Due Date</label>
+                        <input type="date" class="form-control" id="dueDate">
+                        <div class="form-text">Optional due date for the task</div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{% url 'task_list' %}" class="btn btn-secondary me-md-2">
+                            <i class="fas fa-arrow-left me-2"></i>Back to Tasks
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="loading spinner-border spinner-border-sm me-2" style="display: none;"></span>
+                            <i class="fas fa-save me-2"></i>Create Task
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Task Preview -->
+        <div class="card mt-4" id="taskPreview" style="display: none;">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-eye me-2"></i>Task Preview
+                </h5>
+            </div>
+            <div class="card-body">
+                <div id="previewContent">
+                    <!-- Preview content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('addTaskForm');
+    const titleInput = document.getElementById('title');
+    const descriptionInput = document.getElementById('description');
+    const dueDateInput = document.getElementById('dueDate');
+    const previewCard = document.getElementById('taskPreview');
+    const previewContent = document.getElementById('previewContent');
+    
+    // Real-time preview
+    function updatePreview() {
+        const title = titleInput.value.trim();
+        const description = descriptionInput.value.trim();
+        const dueDate = dueDateInput.value;
+        
+        if (title) {
+            previewCard.style.display = 'block';
+            previewContent.innerHTML = `
+                <h6>${escapeHtml(title)}</h6>
+                ${description ? `<p class="text-muted">${escapeHtml(description)}</p>` : ''}
+                <div class="d-flex align-items-center gap-3">
+                    <span class="badge bg-secondary">Pending</span>
+                    <small class="text-muted">
+                        <i class="fas fa-calendar me-1"></i>
+                        ${dueDate ? formatDate(dueDate) : 'No due date'}
+                    </small>
+                </div>
+            `;
+        } else {
+            previewCard.style.display = 'none';
+        }
+    }
+    
+    // Add event listeners for real-time preview
+    titleInput.addEventListener('input', updatePreview);
+    descriptionInput.addEventListener('input', updatePreview);
+    dueDateInput.addEventListener('input', updatePreview);
+    
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const title = titleInput.value.trim();
+        const description = descriptionInput.value.trim();
+        const dueDate = dueDateInput.value;
+        
+        if (!title) {
+            showAlert('Title is required', 'error');
+            titleInput.focus();
+            return;
+        }
+        
+        if (title.length > 200) {
+            showAlert('Title must be less than 200 characters', 'error');
+            titleInput.focus();
+            return;
+        }
+        
+        const submitButton = form.querySelector('button[type="submit"]');
+        showLoading(submitButton);
+        
+        const data = {
+            title: title,
+            description: description || null,
+            due_date: dueDate || null
+        };
+        
+        fetch('/api/tasks/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            hideLoading(submitButton);
+            
+            if (data.status === 'success') {
+                showAlert('Task created successfully!');
+                form.reset();
+                previewCard.style.display = 'none';
+                
+                // Redirect to task list after a short delay
+                setTimeout(() => {
+                    window.location.href = '{% url "task_list" %}';
+                }, 1500);
+            } else {
+                showAlert(data.message || 'Failed to create task', 'error');
+            }
+        })
+        .catch(error => {
+            hideLoading(submitButton);
+            console.error('Error:', error);
+            showAlert('Failed to create task', 'error');
+        });
+    });
+    
+    // Set minimum date to today
+    const today = new Date().toISOString().split('T')[0];
+    dueDateInput.min = today;
+    
+    // Character counter for title
+    const titleCounter = document.createElement('small');
+    titleCounter.className = 'form-text text-muted';
+    titleCounter.style.float = 'right';
+    titleInput.parentNode.appendChild(titleCounter);
+    
+    function updateTitleCounter() {
+        const length = titleInput.value.length;
+        titleCounter.textContent = `${length}/200`;
+        titleCounter.className = length > 200 ? 'form-text text-danger' : 'form-text text-muted';
+    }
+    
+    titleInput.addEventListener('input', updateTitleCounter);
+    updateTitleCounter();
+});
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function formatDate(dateString) {
+    if (!dateString) return 'No due date';
+    const date = new Date(dateString);
+    return date.toLocaleDateString();
+}
+</script>
+{% endblock %}
