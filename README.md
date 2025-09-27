@@ -3,7 +3,7 @@ To-Do List Project with APIs and Templates
 
 # Setup Instructions
 
-git clone https://github.com/yourusername/Pelocal.git
+git clone https://github.com/Shadowninja09/Pelocal.git
 cd Pelocal
 
 # ENV
